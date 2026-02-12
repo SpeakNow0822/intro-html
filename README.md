@@ -12,3 +12,23 @@ I'll meet you over there, can't wait to get started!
 
 This repository is licensed under [MIT](LICENSE) (c) 2019 GitHub, Inc.
 Photo by [Kelli Tungay](https://unsplash.com/photos/Sj0nhVIb4eY) on [Unsplash](https://unsplash.com/)
+
+## ERA5/ERA5-LAND 下载脚本（2021-2025）
+
+仓库新增脚本 `download_era5_2021_2025.py`，用于下载你现有文件对应的 2021-2025 数据：
+
+- `ERA5_daily_tmin_<year>.nc`
+- `ERA5_daily_tmax_<year>.nc`
+- `ERA5_daily_pr_<year>.nc`
+- `ERA5_month_t2m_2021_2025.nc`
+- `ERA5_month_tp_2021_2025.nc`
+- `ERA5_annual_t2m_tp_<year>.nc`
+
+### 使用方法
+
+```bash
+pip install cdsapi
+python download_era5_2021_2025.py
+```
+
+> 运行前请确保你已配置 `~/.cdsapirc`（Copernicus CDS API key）。
